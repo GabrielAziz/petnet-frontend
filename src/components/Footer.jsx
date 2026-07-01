@@ -35,7 +35,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-grid">
           <div>
-            <h3>PETNET</h3>
+            <h3>Netcão</h3>
             <p>Cuidando do seu melhor amigo com amor e profissionalismo desde 2010.</p>
             <div className="social-icons">
               <Facebook size={18} />
@@ -52,7 +52,7 @@ const Footer = () => {
               São José dos Campos - SP
             </p>
             <p><Phone size={14} /> (11) 3456-7890</p>
-            <p><Mail size={14} /> contato@petnet.com.br</p>
+            <p><Mail size={14} /> contato@netcao.com.br</p>
           </div>
 
           <div>
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          &copy; 2025 PETNET. Todos os direitos reservados.
+          &copy; 2025 Netcão. Todos os direitos reservados.
         </div>
       </footer>
 

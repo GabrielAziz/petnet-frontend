@@ -87,7 +87,7 @@ const Services = () => {
             style={{
               fontSize: "2.2rem",
               fontWeight: "900",
-              color: "var(--petnet-blue)",
+              color: "var(--netcao-blue)",
               marginBottom: "0.4rem"
             }}
           >
@@ -98,7 +98,7 @@ const Services = () => {
             style={{
               width: "100px",
               height: "4px",
-              backgroundColor: "var(--petnet-yellow)",
+              backgroundColor: "var(--netcao-yellow)",
               margin: "0 auto 1.3rem",
               borderRadius: "999px"
             }}
@@ -158,7 +158,7 @@ const Services = () => {
                       height: "68px",
                       borderRadius: "20px",
                       background:
-                        "linear-gradient(135deg, var(--petnet-blue), #5f94ff)",
+                        "linear-gradient(135deg, var(--netcao-blue), #5f94ff)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -173,7 +173,7 @@ const Services = () => {
                     style={{
                       fontSize: "1.3rem",
                       fontWeight: "800",
-                      color: "var(--petnet-blue)",
+                      color: "var(--netcao-blue)",
                       margin: 0
                     }}
                   >
@@ -217,7 +217,7 @@ const Services = () => {
                       <CheckCircle2
                         size={18}
                         style={{
-                          color: "var(--petnet-blue)",
+                          color: "var(--netcao-blue)",
                           flexShrink: 0
                         }}
                       />
@@ -232,18 +232,18 @@ const Services = () => {
                   onClick={() => navigate("/servicos")}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background =
-                      "linear-gradient(135deg, #F9EE7C, #FFE666)";
+                      "linear-gradient(135deg, #fac060, #FFE666)";
                     e.currentTarget.style.color = "#1f2c47";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background =
-                      "linear-gradient(135deg, var(--petnet-blue), #5f94ff)";
+                      "linear-gradient(135deg, var(--netcao-blue), #5f94ff)";
                     e.currentTarget.style.color = "white";
                   }}
                   style={{
                     marginTop: "auto",
                     background:
-                      "linear-gradient(135deg, var(--petnet-blue), #5f94ff)",
+                      "linear-gradient(135deg, var(--netcao-blue), #5f94ff)",
                     color: "white",
                     fontWeight: "800",
                     border: "none",

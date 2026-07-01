@@ -57,7 +57,7 @@
 
   border-radius: 16px;
 
-  color: #f9ee7c;
+  color: var(--netcao-yellow);
   background: rgba(255, 255, 255, 0.13);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -84,7 +84,7 @@
 }
 
 .admin-floating-sidebar-brand-text small {
-  color: #f9ee7c;
+  color: var(--netcao-yellow);
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -138,7 +138,7 @@
 
 .admin-floating-sidebar-menu button.active {
   color: #17386f;
-  background: #f9ee7c;
+  background: var(--netcao-yellow);
   border-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 9px 20px rgba(14, 47, 119, 0.18);
 }
@@ -226,7 +226,7 @@
     border-radius: 0 15px 15px 0;
 
     color: #ffffff;
-    background: #3370eb;
+    background: var(--netcao-blue);
     box-shadow: 8px 8px 20px rgba(30, 72, 155, 0.2);
 
     cursor: pointer;

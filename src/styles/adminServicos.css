@@ -20,7 +20,7 @@
 
 .admin-servicos-tag {
   display: inline-block;
-  background: #f9ee7c;
+  background: var(--netcao-yellow);
   color: #000000;
   font-size: 13px;
   font-weight: 800;
@@ -30,7 +30,7 @@
 }
 
 .admin-servicos-header h2 {
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 34px;
   font-weight: 900;
   text-transform: uppercase;
@@ -65,7 +65,7 @@
 
 .admin-servicos-resumo strong {
   display: block;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 26px;
   font-weight: 900;
 }
@@ -100,7 +100,7 @@
 
 .admin-servicos-form h3,
 .admin-servicos-lista h3 {
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 22px;
   font-weight: 900;
   margin: 0 0 20px;
@@ -137,7 +137,7 @@
 .admin-servicos-form input:focus,
 .admin-servicos-form textarea:focus,
 .admin-servicos-form select:focus {
-  border-color: #3370eb;
+  border-color: var(--netcao-blue);
   box-shadow: 0 0 0 4px rgba(51, 112, 235, 0.12);
 }
 
@@ -158,7 +158,7 @@
   height: 58px;
   min-width: 58px;
   border-radius: 18px;
-  background: #3370eb;
+  background: var(--netcao-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +187,7 @@
 
 .admin-servicos-preview strong {
   display: block;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 15px;
   margin-bottom: 4px;
 }
@@ -219,7 +219,7 @@
 }
 
 .btn-salvar-servico {
-  background: #f9ee7c;
+  background: var(--netcao-yellow);
   color: #000000;
   padding: 14px;
 }
@@ -231,7 +231,7 @@
 
 .btn-cancelar-edicao {
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
   padding: 13px;
 }
 
@@ -253,7 +253,7 @@
 
 .admin-servicos-lista-topo span {
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 13px;
   font-weight: 900;
   padding: 8px 12px;
@@ -304,7 +304,7 @@
 
 .admin-servico-title-line h4 {
   margin: 0;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 17px;
   font-weight: 900;
 }
@@ -349,7 +349,7 @@
 
 .btn-editar {
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
 }
 
 .btn-desativar {

@@ -1,4 +1,4 @@
-const STORAGE_KEY = "petnet_notificacoes";
+const STORAGE_KEY = "netcao_notificacoes";
 
 export function listarNotificacoes() {
   const notificacoes = localStorage.getItem(STORAGE_KEY);

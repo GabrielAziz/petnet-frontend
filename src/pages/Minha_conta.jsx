@@ -932,12 +932,12 @@ export default function MinhaConta() {
 
               <div className="hero-info">
                 <span className="hero-badge">
-                  {isAdmin ? "Gerência Petnet" : "Tutor(a) Petnet"}
+                  {isAdmin ? "Gerência Netcão" : "Tutor(a) Netcão"}
                 </span>
                 <h2>{dados.nome}</h2>
                 <p>
                   {isAdmin
-                    ? "Conta ativa para gestão e acompanhamento administrativo da Petnet."
+                    ? "Conta ativa para gestão e acompanhamento administrativo da Netcão."
                     : "Conta ativa e pronta para acompanhar o cuidado do seu pet."}
                 </p>
               </div>
@@ -1275,7 +1275,7 @@ export default function MinhaConta() {
                 <div className="toggle-line">
                   <div>
                     <strong>Receber promoções</strong>
-                    <p>Ofertas e novidades da Petnet</p>
+                    <p>Ofertas e novidades da Netcão</p>
                   </div>
 
                   <label className="switch">

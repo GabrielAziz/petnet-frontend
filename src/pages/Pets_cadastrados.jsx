@@ -322,7 +322,7 @@ const Pets_cadastrados = () => {
     headRow: {
       style: {
         minHeight: "58px",
-        background: "linear-gradient(90deg, #3370eb 0%, #2457bd 100%)",
+        background: "linear-gradient(90deg, #1e3c70 0%, #2457bd 100%)",
         borderTopLeftRadius: "16px",
         borderTopRightRadius: "16px",
         borderBottom: "none",
@@ -371,11 +371,11 @@ const Pets_cadastrados = () => {
         margin: "0 4px",
         cursor: "pointer",
         transition: "0.2s ease",
-        color: "#3370eb",
-        fill: "#3370eb",
+        color: "#1e3c70",
+        fill: "#1e3c70",
         backgroundColor: "#f4f8ff",
         "&:hover:not(:disabled)": {
-          backgroundColor: "#F9EE7C",
+          backgroundColor: "#fac060",
         },
         "&:disabled": {
           opacity: 0.4,

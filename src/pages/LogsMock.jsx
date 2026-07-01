@@ -12,7 +12,7 @@ const logsMock = [
     acao: "Criou novo agendamento",
     deletavel: false,
     detalhes:
-      "Foi criado um novo agendamento para banho e tosa no sistema PETNET.",
+      "Foi criado um novo agendamento para banho e tosa no sistema Netcão.",
   },
   {
     id: "#LOG-2026-0537",
@@ -68,7 +68,7 @@ const logsMock = [
     entidade: "Usuário",
     acao: "Novo usuário cadastrado",
     deletavel: false,
-    detalhes: "Um novo usuário foi criado no sistema PETNET.",
+    detalhes: "Um novo usuário foi criado no sistema Netcão.",
   },
   {
     id: "#LOG-2026-0531",
@@ -77,7 +77,7 @@ const logsMock = [
     entidade: "Serviço",
     acao: 'Adicionou serviço "Tosa Higiênica"',
     deletavel: false,
-    detalhes: "Um novo serviço foi adicionado ao catálogo do PETNET.",
+    detalhes: "Um novo serviço foi adicionado ao catálogo do Netcão.",
   },
   {
     id: "#LOG-2026-0530",

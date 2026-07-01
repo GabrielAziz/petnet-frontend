@@ -136,7 +136,7 @@ const AdminSidebar = () => {
           </span>
 
           <div className="admin-floating-sidebar-brand-text">
-            <small>PETNET</small>
+            <small>Netcão</small>
             <strong>Administração</strong>
           </div>
         </div>

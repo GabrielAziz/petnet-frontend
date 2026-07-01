@@ -1,13 +1,13 @@
 :root {
-    --petnet-blue: #3370EB;
-    --petnet-yellow: #F9EE7C;
-    --petnet-black: #000000;
-    --petnet-white: #ffffff;
+    --netcao-blue: #1e3c70;
+    --netcao-yellow: #fac060;
+    --netcao-black: #000000;
+    --netcao-white: #ffffff;
   }
   
   body {
     scroll-behavior: smooth;
-    background-color: var(--petnet-white);
+    background-color: var(--netcao-white);
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
@@ -50,7 +50,7 @@
   }
   
   .titulo {
-    color: var(--petnet-blue);
+    color: var(--netcao-blue);
     font-size: 45px;
     font-weight: 900;
     margin-bottom: 25px;
@@ -61,7 +61,7 @@
   
   .label {
     display: block;
-    color: var(--petnet-blue);
+    color: var(--netcao-blue);
     font-weight: 700;
     font-size: 14px;
     margin: 10px 0 5px 0;
@@ -88,7 +88,7 @@
   }
   
   .link {
-    color: var(--petnet-blue);
+    color: var(--netcao-blue);
     font-size: 12px;
     cursor: pointer;
     text-decoration: none;
@@ -117,8 +117,8 @@
   }
   
   .btn {
-    background-color: var(--petnet-blue);
-    color: var(--petnet-white);
+    background-color: var(--netcao-blue);
+    color: var(--netcao-white);
     border: none;
     padding: 16px 60px;
     border-radius: 8px;
@@ -153,7 +153,7 @@
   }
   
   .titulo2 {
-    color: var(--petnet-blue);
+    color: var(--netcao-blue);
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 25px;
@@ -169,8 +169,8 @@
   
   .btn-outline {
     background-color: transparent;
-    border: 2px solid var(--petnet-blue);
-    color: var(--petnet-blue);
+    border: 2px solid var(--netcao-blue);
+    color: var(--netcao-blue);
     padding: 12px 36px;
     border-radius: 8px;
     font-weight: 700;
@@ -181,8 +181,8 @@
   }
   
   .btn-outline:hover {
-    background-color: var(--petnet-blue);
-    color: var(--petnet-white);
+    background-color: var(--netcao-blue);
+    color: var(--netcao-white);
   }
   
   @media (max-width: 1024px) {
@@ -401,7 +401,7 @@
 }
 
 .criar-mobile span {
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -529,7 +529,7 @@
   border: none;
   border-radius: 50%;
   background: rgba(51, 112, 235, 0.08);
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   font-size: 22px;
   font-weight: 700;
   line-height: 1;
@@ -541,8 +541,8 @@
 }
 
 .close:hover {
-  background: var(--petnet-blue);
-  color: var(--petnet-white);
+  background: var(--netcao-blue);
+  color: var(--netcao-white);
   transform: rotate(90deg) scale(1.05);
   box-shadow: 0 8px 18px rgba(51, 112, 235, 0.22);
 }
@@ -557,7 +557,7 @@
   font-size: 12px;
   background: none;
   border: none;
-  color: #3370EB;
+  color: var(--netcao-blue);
   cursor: pointer;
 }
 
@@ -571,7 +571,7 @@
 .codigo-box {
   width: 45px;
   height: 55px;
-  border: 2px solid #3370EB;
+  border: 2px solid var(--netcao-blue);
   border-radius: 8px;
   text-align: center;
   font-size: 28px;
@@ -606,7 +606,7 @@
 }
 
 .reset-modal-title {
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   font-size: 26px;
   font-weight: 900;
   margin: 0 0 12px 0;
@@ -621,7 +621,7 @@
 
 .reset-modal-email {
   background: #f4f7ff;
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   border: 1px solid rgba(51, 112, 235, 0.18);
   border-radius: 12px;
   padding: 10px 14px;
@@ -636,8 +636,8 @@
   border: none;
   border-radius: 12px;
   padding: 13px 18px;
-  background: var(--petnet-blue);
-  color: var(--petnet-white);
+  background: var(--netcao-blue);
+  color: var(--netcao-white);
   font-size: 15px;
   font-weight: 800;
   cursor: pointer;
@@ -683,7 +683,7 @@
   margin-right: calc(100% - min(100%, 550px));
   border: none;
   background: rgba(51, 112, 235, 0.08);
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   font-size: 13px;
   font-weight: 800;
   cursor: pointer;
@@ -693,8 +693,8 @@
 }
 
 .forgot-password-btn:hover {
-  background: var(--petnet-blue);
-  color: var(--petnet-white);
+  background: var(--netcao-blue);
+  color: var(--netcao-white);
   transform: translateY(-1px);
   box-shadow: 0 8px 18px rgba(51, 112, 235, 0.2);
 }

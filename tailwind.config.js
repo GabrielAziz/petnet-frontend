@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         white: '#ffffff',
-        bluePetnet: '#3370EB',
-        yellowPetnet: '#F9EE7C',
+        blueNetcao: '#1e3c70',
+        yellowNetcao: '#fac060',
         black: '#000000',
       },
     },

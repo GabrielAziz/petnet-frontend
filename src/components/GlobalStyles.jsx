@@ -8,17 +8,17 @@ const GlobalStyles = () => (
   <style>
     {`
       :root {
-        --petnet-blue: #3370EB;
-        --petnet-yellow: #F9EE7C;
-        --petnet-black: #000000;
-        --petnet-white: #ffffff;
+        --netcao-blue: #1e3c70;
+        --netcao-yellow: #fac060;
+        --netcao-black: #000000;
+        --netcao-white: #ffffff;
         --max-width: 1280px;
       }
 
       body {
         margin: 0;
         font-family: 'Inter', sans-serif;
-        color: var(--petnet-black);
+        color: var(--netcao-black);
         background-color: white;
         scroll-behavior: smooth;
       }

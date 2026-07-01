@@ -79,7 +79,7 @@ const Dashboard = () => {
         {/* ================= GRÁFICO DE BARRAS DINÂMICO ================= */}
         <div className="chart-box">
           <h3 className="chart-title" style={{ textAlign: "center", marginBottom: 10 }}>
-            Quantidade mensal — <span style={{ color: "var(--petnet-blue)" }}>{servicoSelecionado}</span>
+            Quantidade mensal — <span style={{ color: "var(--netcao-blue)" }}>{servicoSelecionado}</span>
           </h3>
 
           <ResponsiveContainer width="100%" height={380}>
@@ -88,7 +88,7 @@ const Dashboard = () => {
               <XAxis dataKey="mes" />
               <YAxis />
               <Tooltip />
-              <Bar dataKey="quantidade" fill="#3370EB" />
+              <Bar dataKey="quantidade" fill="#1e3c70" />
             </BarChart>
           </ResponsiveContainer>
         </div>

@@ -1,8 +1,8 @@
 :root {
-  --petnet-blue: #3370eb;
-  --petnet-yellow: #f9ee7c;
-  --petnet-black: #000000;
-  --petnet-white: #ffffff;
+  --netcao-blue: #1e3c70;
+  --netcao-yellow: #fac060;
+  --netcao-black: #000000;
+  --netcao-white: #ffffff;
   --max-width: 1280px;
 }
 
@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  color: var(--petnet-black);
+  color: var(--netcao-black);
   background-color: white;
   scroll-behavior: smooth;
 }
@@ -27,7 +27,7 @@ body {
 /* Botões globais */
 .btn-primary {
   padding: 1rem 2rem;
-  background-color: var(--petnet-blue);
+  background-color: var(--netcao-blue);
   color: white;
   font-weight: bold;
   border-radius: 0.75rem;
@@ -41,8 +41,8 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: var(--petnet-yellow);
-  color: var(--petnet-black);
+  background-color: var(--netcao-yellow);
+  color: var(--netcao-black);
   transform: scale(1.02);
 }
 
@@ -54,7 +54,7 @@ body {
 .section-title-large {
   font-size: 2.25rem;
   font-weight: bold;
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -62,7 +62,7 @@ body {
 .linha {
   width: 100px;
   height: 5px;
-  background-color: var(--petnet-yellow);
+  background-color: var(--netcao-yellow);
   border-radius: 2px;
   margin: 3px auto 2rem;
 }

@@ -6,7 +6,7 @@
 .btn-ver:focus-visible {
   outline: none;
   box-shadow: 0 8px 18px rgba(51, 112, 235, 0.2);
-  background: linear-gradient(90deg, #3370eb 0%, #2457bd 100%);
+  background: linear-gradient(90deg, var(--netcao-blue) 0%, var(--netcao-blue-dark) 100%);
 }
 
 .btn-ver:active {
@@ -48,7 +48,7 @@
 
 .petsReg-title {
   margin: 0 0 24px;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 2.3rem;
   font-weight: 900;
   line-height: 1.15;
@@ -80,7 +80,7 @@
   top: 50%;
   left: 16px;
   z-index: 1;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 18px;
   pointer-events: none;
   transform: translateY(-50%);
@@ -107,7 +107,7 @@
 }
 
 .pets-search-input-modern:focus {
-  border-color: #3370eb;
+  border-color: var(--netcao-blue);
   box-shadow: 0 0 0 4px rgba(51, 112, 235, 0.12);
 }
 
@@ -161,7 +161,7 @@
 
 .pets-filter-group select:hover,
 .pets-filter-group select:focus {
-  border-color: #3370eb;
+  border-color: var(--netcao-blue);
 }
 
 .pets-filter-group select:focus {
@@ -195,7 +195,7 @@
 }
 
 .btn-add-pet-table:hover {
-  background: #f9ee7c;
+  background: var(--netcao-yellow);
   transform: translateY(-1px);
   box-shadow: 0 14px 26px rgba(249, 238, 124, 0.32);
 }
@@ -284,7 +284,7 @@
 .pets-table-card .rdt_TableHeadRow {
   min-height: 52px;
   border-bottom: none;
-  background: #3370eb;
+  background: var(--netcao-blue);
   color: #ffffff;
 }
 
@@ -397,7 +397,7 @@
   padding: 7px 11px;
   border-radius: 999px;
   background: #eef4ff;
-  color: #2457bd;
+  color: var(--netcao-blue-dark);
   font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
@@ -450,7 +450,7 @@
 
 .badge-sex.male {
   background: #eef4ff;
-  color: #2457bd;
+  color: var(--netcao-blue-dark);
 }
 
 .badge-sex.null {
@@ -509,7 +509,7 @@
 }
 
 .pet-expand-card label {
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.6px;
