@@ -205,7 +205,7 @@ export default function App() {
           </h1>
 
           <p className="texto">
-            Venha fazer parte da PETNET e aproveite serviços feitos
+            Venha fazer parte da Netcão e aproveite serviços feitos
             especialmente para seu pet. Crie sua conta agora!
           </p>
 

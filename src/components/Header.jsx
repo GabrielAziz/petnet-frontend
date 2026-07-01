@@ -78,7 +78,7 @@ const Header = () => {
     O header administrativo só aparece dentro das rotas
     administrativas.
 
-    Ao entrar na Home, o título volta a ser PETNET e o menu
+    Ao entrar na Home, o título volta a ser Netcão e o menu
     administrativo não fica misturado com o menu público.
   */
   const isAdminPage =
@@ -542,7 +542,7 @@ const Header = () => {
             className="icon-link"
             style={{
               color: estaHover
-                ? "var(--petnet-yellow)"
+                ? "var(--netcao-yellow)"
                 : "#ffffff",
             }}
           />
@@ -561,7 +561,7 @@ const Header = () => {
         <span
           style={{
             color: estaHover
-              ? "var(--petnet-yellow)"
+              ? "var(--netcao-yellow)"
               : "#ffffff",
           }}
         >
@@ -725,7 +725,7 @@ const Header = () => {
               ? "ADMINISTRAÇÃO"
               : isColaboradorPage
                 ? "COLABORADOR"
-                : "PETNET"}
+                : "Netcão"}
           </div>
 
           <button

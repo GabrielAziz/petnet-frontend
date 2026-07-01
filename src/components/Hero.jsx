@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/icons/logopetnet.png";
+import HeroImg from "../assets/icons/logonetcao.png";
 import "../styles/hero.css";
 
 const Hero = () => (
@@ -17,7 +17,7 @@ const Hero = () => (
           </a>
         </div>
         <div className="hero-image">
-          <img src={HeroImg} alt="logo PETNET" />
+          <img src={HeroImg} alt="logo Netcão" />
         </div>
       </div>
     </div>

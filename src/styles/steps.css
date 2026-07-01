@@ -12,14 +12,14 @@
 .steps-main-title {
   font-size: 2.2rem;
   font-weight: 900;
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   margin-bottom: 0.4rem;
 }
 
 .steps-divider {
   width: 100px;
   height: 4px;
-  background-color: var(--petnet-yellow);
+  background-color: var(--netcao-yellow);
   margin: 0 auto 1.3rem;
   border-radius: 999px;
 }
@@ -56,7 +56,7 @@
   width: 3.3rem;
   height: 3.3rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, #3370eb, #5f94ff);
+  background: linear-gradient(135deg, var(--netcao-blue), #5f94ff);
   color: #fff;
   font-size: 1.4rem;
   font-weight: 800;

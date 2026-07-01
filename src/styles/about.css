@@ -33,12 +33,12 @@
 .about-text h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--petnet-black);
+  color: var(--netcao-black);
   margin-bottom: 1.5rem;
 }
 
 .about-text h2 span {
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
 }
 
 .about-text p {
@@ -59,7 +59,7 @@
 .linha-amarela {
   width: 100px;
   height: 4px;
-  background-color: #F9EE7C;
+  background-color: var(--netcao-yellow);
   margin: 0.5rem auto 1.5rem auto;
   border-radius: 2px;
 }
@@ -71,14 +71,14 @@
 }
 
 .check-icon {
-  color: var(--petnet-yellow);
-  stroke: var(--petnet-blue);
+  color: var(--netcao-yellow);
+  stroke: var(--netcao-blue);
   margin-top: 0.125rem;
   flex-shrink: 0;
 }
 
 .check-item span {
-  color: var(--petnet-black);
+  color: var(--netcao-black);
   font-weight: 500;
 }
 

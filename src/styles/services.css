@@ -19,14 +19,14 @@
 .services-title {
   font-size: 2.2rem;
   font-weight: 900;
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   margin-bottom: 0.4rem;
 }
 
 .services-divider {
   width: 100px;
   height: 4px;
-  background-color: var(--petnet-yellow);
+  background-color: var(--netcao-yellow);
   margin: 0 auto 1.3rem;
   border-radius: 999px;
 }
@@ -71,7 +71,7 @@
   width: 68px;
   height: 68px;
   border-radius: 20px;
-  background: linear-gradient(135deg, var(--petnet-blue), #5f94ff);
+  background: linear-gradient(135deg, var(--netcao-blue), #5f94ff);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@
 .service-card h3 {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   margin: 0;
 }
 
@@ -113,13 +113,13 @@
 }
 
 .services-check-icon {
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   flex-shrink: 0;
 }
 
 .service-button {
   margin-top: auto;
-  background: linear-gradient(135deg, var(--petnet-blue), #5f94ff);
+  background: linear-gradient(135deg, var(--netcao-blue), #5f94ff);
   color: white;
   font-weight: 800;
   border: none;
@@ -134,7 +134,7 @@
 }
 
 .service-button:hover {
-  background: linear-gradient(135deg, #f9ee7c, #ffe666);
+  background: linear-gradient(135deg, var(--netcao-yellow), #ffe666);
   color: #1f2c47;
   transform: translateY(-1px);
 }

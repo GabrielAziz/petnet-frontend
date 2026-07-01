@@ -35,7 +35,7 @@
 .details-kicker {
   display: inline-flex;
   width: fit-content;
-  color: #3370eb;
+  color: var(--netcao-blue);
   background: #eef5ff;
   border-radius: 999px;
   padding: 6px 12px;
@@ -103,7 +103,7 @@
 
 .logs-filters input:focus,
 .logs-filters select:focus {
-  border-color: #3370eb;
+  border-color: var(--netcao-blue);
   box-shadow: 0 0 0 4px rgba(51, 112, 235, 0.12);
 }
 
@@ -112,7 +112,7 @@
   border-radius: 14px;
   padding: 0 20px;
   min-height: 44px;
-  background: #f9ee7c;
+  background: var(--netcao-yellow);
   color: #172033;
   font-weight: 900;
   cursor: pointer;
@@ -363,13 +363,13 @@
 
 .status-info {
   background: #eef5ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
 }
 
 .btn-detalhes {
   border: none;
   background: #eef5ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-weight: 950;
   border-radius: 12px;
   padding: 9px 13px;
@@ -378,7 +378,7 @@
 }
 
 .btn-detalhes:hover {
-  background: #3370eb;
+  background: var(--netcao-blue);
   color: #ffffff;
   transform: translateY(-1px);
 }
@@ -432,7 +432,7 @@
 }
 
 .fechar-detalhes:hover {
-  background: #3370eb;
+  background: var(--netcao-blue);
   color: #ffffff;
 }
 

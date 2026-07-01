@@ -343,7 +343,7 @@ function Pets() {
         <div className="pets-page">
           <div className="pets-container">
             <div className="pets-hero">
-              <div className="pets-hero-badge">Cadastro Petnet</div>
+              <div className="pets-hero-badge">Cadastro Netcão</div>
               <h1 className="topo2">Cadastre seu pet</h1>
               <p className="pets-subtitle">
                 Preencha os dados com carinho para manter o perfil do seu pet

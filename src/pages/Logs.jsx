@@ -213,12 +213,12 @@ function Logs() {
             <h1>Logs do Sistema</h1>
             <p>
               Acompanhe as ações, erros e movimentações internas da plataforma
-              PETNET.
+              Netcão.
             </p>
           </div>
 
           <div className="logs-hero-badge">
-            <strong>Monitoramento PETNET</strong>
+            <strong>Monitoramento Netcão</strong>
           </div>
         </section>
 
