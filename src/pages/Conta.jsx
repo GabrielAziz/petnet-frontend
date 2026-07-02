@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "../styles/conta.css";
 import { useNavigate } from "react-router-dom";
 import authService from "../services/authService";
+import { useAuth } from "../context/AuthContext";
 
 export default function App() {
+  const { setAuthFromLogin } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
   const [openModalResetSenha, setOpenModalResetSenha] = useState(false);
   const [erroEmail, setErroEmail] = useState("");
@@ -40,29 +42,14 @@ export default function App() {
     try {
       const { user } = await authService.login(email, senha);
 
-      localStorage.setItem("userCpf", user.cpf);
-      localStorage.setItem("userName", user.name);
-      localStorage.setItem("userType", user.type);
-      localStorage.setItem("loginTime", Date.now().toString());
+      setAuthFromLogin(user);
 
       if (user.type === "Gerente") {
-        localStorage.setItem("isAdmin", "true");
-        localStorage.setItem("isColaborador", "false");
-        localStorage.setItem("isUser", "false");
-
-        window.location.href = "/admin";
+        navigate("/admin", { replace: true });
       } else if (user.type === "Colaborador") {
-        localStorage.setItem("isAdmin", "false");
-        localStorage.setItem("isColaborador", "true");
-        localStorage.setItem("isUser", "false");
-
-        window.location.href = "/colaborador/agenda";
+        navigate("/colaborador/agenda", { replace: true });
       } else {
-        localStorage.setItem("isAdmin", "false");
-        localStorage.setItem("isColaborador", "false");
-        localStorage.setItem("isUser", "true");
-
-        window.location.href = "/minhaconta";
+        navigate("/minhaconta", { replace: true });
       }
     } catch (error) {
       setMensagem(

@@ -1,19 +1,17 @@
 import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
-import { isSessionExpired, clearSession } from "../utils/authSession";
+import { useAuth } from "../context/AuthContext";
+import LoadingScreen from "./LoadingScreen";
 
 export default function ProtectedRoute({ children }) {
   const location = useLocation();
+  const { isAuthenticated, role, isLoading } = useAuth();
 
-  const isAdmin = localStorage.getItem("isAdmin") === "true";
-  const isColaborador = localStorage.getItem("isColaborador") === "true";
-  const isUser = localStorage.getItem("isUser") === "true";
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
 
-  const isLogged = isAdmin || isColaborador || isUser;
-
-  if (!isLogged || isSessionExpired()) {
-    clearSession();
-
+  if (!isAuthenticated) {
     return (
       <Navigate
         to="/conta"
@@ -25,6 +23,9 @@ export default function ProtectedRoute({ children }) {
       />
     );
   }
+
+  const isAdmin = role === "admin";
+  const isColaborador = role === "colaborador";
 
   if (location.pathname.startsWith("/admin") && !isAdmin) {
     return <Navigate to="/conta" replace />;

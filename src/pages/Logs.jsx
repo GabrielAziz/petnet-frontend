@@ -22,7 +22,21 @@ function Logs() {
       .then((res) => {
         setLogs(Array.isArray(res.data) ? res.data : []);
       })
-      .catch(() => setErro("Não foi possível carregar os logs."))
+      .catch((err) => {
+        console.error("Erro ao carregar logs:", err);
+
+        if (err.response) {
+          const mensagem = err.response.data?.message || err.response.statusText;
+          setErro(
+            `Não foi possível carregar os logs (${err.response.status}${mensagem ? ` - ${mensagem}` : ""
+            }).`
+          );
+        } else {
+          setErro(
+            "Não foi possível conectar ao servidor de logs (verifique CORS/conectividade)."
+          );
+        }
+      })
       .finally(() => setCarregando(false));
   }, []);
 

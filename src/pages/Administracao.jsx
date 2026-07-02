@@ -11,6 +11,7 @@ import IconLogoutHover from "../assets/icons/logout-h.png";
 import dashboardService from "../services/dashboardService";
 import scheduleService from "../services/scheduleService";
 import notificationService from "../services/notificationService";
+import { useAuth } from "../context/AuthContext";
 
 import {
   CalendarX,
@@ -119,6 +120,7 @@ function getCardValue(cards, titulo) {
 
 export default function Administracao() {
   const navigate = useNavigate();
+  const { logout } = useAuth();
 
   const [periodoAtivo, setPeriodoAtivo] = useState("Hoje");
 
@@ -552,11 +554,8 @@ export default function Administracao() {
     [colaboradoresData.labels]
   );
 
-  function handleLogout() {
-    localStorage.removeItem("isAdmin");
-    localStorage.removeItem("isDev");
-    localStorage.removeItem("token");
-
+  async function handleLogout() {
+    await logout();
     navigate("/conta");
   }
 
