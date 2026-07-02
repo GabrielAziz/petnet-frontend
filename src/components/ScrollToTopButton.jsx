@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
         width: "50px",
         height: "50px",
         borderRadius: "50%",
-        backgroundColor: showButton ? "#f9ee7c" : "transparent",
+        backgroundColor: showButton ? "#fac060" : "transparent",
         border: "0",
         outline: "none",
         boxShadow: showButton ? "0 4px 15px rgba(0,0,0,0.15)" : "none",
@@ -51,7 +51,7 @@ const ScrollToTopButton = () => {
         height="24"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#3370eb"
+        stroke="#1e3c70"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"

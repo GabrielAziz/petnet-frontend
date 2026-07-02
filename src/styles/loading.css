@@ -46,7 +46,7 @@
 .loading-title {
   font-size: 2rem;
   font-weight: 900;
-  color: #3370eb;
+  color: var(--netcao-blue);
   margin: 0 0 10px;
 }
 
@@ -68,7 +68,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #3370eb;
+  background: var(--netcao-blue);
   animation: bounceDots 1.4s infinite ease-in-out;
 }
 

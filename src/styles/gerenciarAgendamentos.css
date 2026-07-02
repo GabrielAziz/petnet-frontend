@@ -1,7 +1,7 @@
 :root {
-  --gerenciar-ag-blue: #3370eb;
+  --gerenciar-ag-blue: var(--netcao-blue);
   --gerenciar-ag-blue-dark: #244fba;
-  --gerenciar-ag-yellow: #f9ee7c;
+  --gerenciar-ag-yellow: var(--netcao-yellow);
   --gerenciar-ag-bg: #f4f8ff;
   --gerenciar-ag-text: #23345b;
   --gerenciar-ag-soft: #7180a0;
@@ -105,7 +105,7 @@
 .gerenciar-ag-new-button {
   flex: 0 0 auto;
   padding: 0.95rem 1.2rem;
-  background: linear-gradient(135deg, #3370eb, #5d95ff);
+  background: linear-gradient(135deg, var(--netcao-blue), #5d95ff);
   border-radius: 16px;
   color: #fff;
   box-shadow: 0 13px 25px rgba(51, 112, 235, 0.21);
@@ -149,7 +149,7 @@
 
 .gerenciar-ag-summary-card.total .gerenciar-ag-summary-icon {
   background: rgba(51, 112, 235, 0.12);
-  color: #3370eb;
+  color: var(--netcao-blue);
 }
 
 .gerenciar-ag-summary-card.scheduled .gerenciar-ag-summary-icon {
@@ -851,7 +851,7 @@
 }
 
 .gerenciar-ag-modal-services button.active {
-  background: linear-gradient(135deg, #3370eb, #5c94ff);
+  background: linear-gradient(135deg, var(--netcao-blue), #5c94ff);
   border-color: transparent;
   color: #fff;
 }
@@ -891,7 +891,7 @@
 }
 
 .gerenciar-ag-save-button {
-  background: linear-gradient(135deg, #3370eb, #5c94ff);
+  background: linear-gradient(135deg, var(--netcao-blue), #5c94ff);
   color: #fff;
   box-shadow: 0 11px 21px rgba(51, 112, 235, 0.2);
 }

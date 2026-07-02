@@ -11,6 +11,7 @@ import IconLogoutHover from "../assets/icons/logout-h.png";
 import dashboardService from "../services/dashboardService";
 import scheduleService from "../services/scheduleService";
 import notificationService from "../services/notificationService";
+import { useAuth } from "../context/AuthContext";
 
 import {
   CalendarX,
@@ -25,7 +26,7 @@ import {
   Bath,
 } from "lucide-react";
 
-const chartColors = ["#3370EB", "#F2A900", "#20B68A", "#6D65F6"];
+const chartColors = ["#1e3c70", "#F2A900", "#20B68A", "#6D65F6"];
 
 const periodos = ["Hoje", "Mensal", "Anual"];
 
@@ -119,6 +120,7 @@ function getCardValue(cards, titulo) {
 
 export default function Administracao() {
   const navigate = useNavigate();
+  const { logout } = useAuth();
 
   const [periodoAtivo, setPeriodoAtivo] = useState("Hoje");
 
@@ -326,7 +328,7 @@ export default function Administracao() {
         parentHeightOffset: 0,
       },
 
-      colors: ["#3370EB"],
+      colors: ["#1e3c70"],
 
       dataLabels: {
         enabled: false,
@@ -485,7 +487,7 @@ export default function Administracao() {
       },
 
       colors: [
-        "#3370EB",
+        "#1e3c70",
         "#12B76A",
         "#7C3AED",
         "#F5B942",
@@ -552,11 +554,8 @@ export default function Administracao() {
     [colaboradoresData.labels]
   );
 
-  function handleLogout() {
-    localStorage.removeItem("isAdmin");
-    localStorage.removeItem("isDev");
-    localStorage.removeItem("token");
-
+  async function handleLogout() {
+    await logout();
     navigate("/conta");
   }
 
@@ -570,7 +569,7 @@ export default function Administracao() {
           <section className="admin-loading-shell">
             <div className="admin-loading-card">
               <div className="admin-loading-brand">
-                <span>PETNET</span>
+                <span>Netcão</span>
                 <strong>Administração</strong>
               </div>
 

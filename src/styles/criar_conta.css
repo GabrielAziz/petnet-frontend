@@ -1,15 +1,15 @@
 :root {
-  --petnet-blue: #3370eb;
-  --petnet-blue-dark: #2457bd;
-  --petnet-yellow: #f9ee7c;
-  --petnet-black: #000000;
-  --petnet-white: #ffffff;
-  --petnet-bg: #f8fbff;
-  --petnet-border: #dfe9ff;
-  --petnet-text: #1f2937;
-  --petnet-text-soft: #6b7280;
-  --petnet-danger: #ef4444;
-  --petnet-success: #16a34a;
+  --netcao-blue: #1e3c70;
+  --netcao-blue-dark: #2457bd;
+  --netcao-yellow: #fac060;
+  --netcao-black: #000000;
+  --netcao-white: #ffffff;
+  --netcao-bg: #f8fbff;
+  --netcao-border: #dfe9ff;
+  --netcao-text: #1f2937;
+  --netcao-text-soft: #6b7280;
+  --netcao-danger: #ef4444;
+  --netcao-success: #16a34a;
   --shadow-soft: 0 14px 35px rgba(28, 63, 140, 0.08);
   --shadow-card: 0 12px 24px rgba(51, 112, 235, 0.08);
   --radius-xl: 24px;
@@ -22,7 +22,7 @@ body,
 html,
 #root {
   scroll-behavior: smooth;
-  background-color: var(--petnet-white);
+  background-color: var(--netcao-white);
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
@@ -53,7 +53,7 @@ html,
   display: inline-block;
   padding: 8px 14px;
   background: #eef4ff;
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   border-radius: 999px;
   font-size: 12px;
   font-weight: 800;
@@ -63,7 +63,7 @@ html,
 }
 
 .titulo {
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   font-size: 2.8rem;
   font-weight: 900;
   margin: 0 0 10px;
@@ -72,7 +72,7 @@ html,
 
 .cadastro-subtitulo {
   max-width: 760px;
-  color: var(--petnet-text-soft);
+  color: var(--netcao-text-soft);
   font-size: 1rem;
   line-height: 1.7;
   margin: 0;
@@ -80,8 +80,8 @@ html,
 
 /* CARD */
 .cadastro-card {
-  background: var(--petnet-white);
-  border: 1px solid var(--petnet-border);
+  background: var(--netcao-white);
+  border: 1px solid var(--netcao-border);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
   overflow: hidden;
@@ -102,7 +102,7 @@ html,
 
 .cadastro-card-top p {
   margin: 0;
-  color: var(--petnet-text-soft);
+  color: var(--netcao-text-soft);
   font-size: 14px;
 }
 
@@ -134,7 +134,7 @@ html,
 }
 
 .section-title svg {
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
 }
 
 .linhas {
@@ -156,7 +156,7 @@ html,
 }
 
 .campo label {
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
   font-weight: 800;
   font-size: 12px;
   margin-bottom: 7px;
@@ -175,11 +175,11 @@ input {
   outline: none;
   transition: 0.2s ease;
   background: #ffffff;
-  color: var(--petnet-text);
+  color: var(--netcao-text);
 }
 
 input:focus {
-  border-color: var(--petnet-blue);
+  border-color: var(--netcao-blue);
   box-shadow: 0 0 0 4px rgba(51, 112, 235, 0.12);
 }
 
@@ -200,7 +200,7 @@ input:focus {
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: var(--petnet-blue);
+  color: var(--netcao-blue);
 }
 
 /* SENHA */
@@ -219,7 +219,7 @@ input:focus {
 
 .bloco.requisitos {
   background: #fbfcff;
-  border: 1px solid var(--petnet-border);
+  border: 1px solid var(--netcao-border);
   border-radius: 18px;
   padding: 18px;
   box-shadow: var(--shadow-card);
@@ -251,16 +251,16 @@ input:focus {
 }
 
 .validado {
-  color: var(--petnet-success);
+  color: var(--netcao-success);
 }
 
 .invalido {
-  color: var(--petnet-danger);
+  color: var(--netcao-danger);
 }
 
 /* MENSAGENS */
 .erro-senha {
-  color: var(--petnet-danger);
+  color: var(--netcao-danger);
   font-weight: 700;
   font-size: 14px;
   margin: -4px 0 0;
@@ -268,7 +268,7 @@ input:focus {
 }
 
 .sucesso-cadastro {
-  color: var(--petnet-success);
+  color: var(--netcao-success);
   font-weight: 700;
   font-size: 14px;
   margin: -4px 0 0;
@@ -276,7 +276,7 @@ input:focus {
 }
 
 .input-erro {
-  border: 2px solid var(--petnet-danger) !important;
+  border: 2px solid var(--netcao-danger) !important;
   background-color: #fff1f2 !important;
 }
 
@@ -284,10 +284,10 @@ input:focus {
 .btn {
   background: linear-gradient(
     90deg,
-    var(--petnet-blue) 0%,
-    var(--petnet-blue-dark) 100%
+    var(--netcao-blue) 0%,
+    var(--netcao-blue-dark) 100%
   );
-  color: var(--petnet-white);
+  color: var(--netcao-white);
   border: none;
   padding: 16px 34px;
   border-radius: 14px;
@@ -361,7 +361,7 @@ input[type="password"]::-webkit-password-reveal {
 .cep-helper {
   display: block;
   margin-top: 6px;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 0.8rem;
   font-weight: 600;
 }

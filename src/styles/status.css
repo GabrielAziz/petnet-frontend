@@ -1,4 +1,4 @@
-/* STATUS ADMIN - PETNET */
+/* STATUS ADMIN - Netcão */
 
 .status-admin-page {
   min-height: 100vh;
@@ -51,7 +51,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background: #f9ee7c;
+  background: var(--netcao-yellow);
   color: #17386f;
   font-size: 0.82rem;
   font-weight: 900;
@@ -100,7 +100,7 @@
   height: 42px;
   min-width: 42px;
   border-radius: 0.9rem;
-  background: #3370eb;
+  background: var(--netcao-blue);
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -161,7 +161,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-weight: 900;
   box-shadow: 0 16px 35px rgba(51, 112, 235, 0.08);
 }
@@ -195,18 +195,18 @@
 
 .status-stat-card strong {
   display: block;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1;
 }
 
 .status-stat-card.total {
-  border-left-color: #f9ee7c;
+  border-left-color: var(--netcao-yellow);
 }
 
 .status-stat-card.blue {
-  border-left-color: #3370eb;
+  border-left-color: var(--netcao-blue);
 }
 
 .status-stat-card.green {
@@ -277,7 +277,7 @@
   height: 34px;
   min-width: 34px;
   border-radius: 999px;
-  background: #3370eb;
+  background: var(--netcao-blue);
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -296,7 +296,7 @@
   border-radius: 1rem;
   padding: 0.75rem 0.9rem;
   margin-bottom: 0.9rem;
-  color: #3370eb;
+  color: var(--netcao-blue);
 }
 
 .status-search input {
@@ -350,7 +350,7 @@
 .status-appointment-card:hover,
 .status-appointment-card.selected {
   transform: translateY(-1px);
-  border-color: #3370eb;
+  border-color: var(--netcao-blue);
   box-shadow: 0 10px 22px rgba(51, 112, 235, 0.12);
 }
 
@@ -413,7 +413,7 @@
   min-width: 46px;
   border-radius: 1rem;
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,7 +451,7 @@
 
 .status-azul {
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
 }
 
 .status-verde {
@@ -505,7 +505,7 @@
 }
 
 .status-current-box {
-  background: linear-gradient(135deg, #3370eb 0%, #1746a2 100%);
+  background: linear-gradient(135deg, var(--netcao-blue) 0%, #1746a2 100%);
   color: #ffffff;
   border-radius: 1.2rem;
   padding: 1rem;
@@ -563,7 +563,7 @@
 }
 
 .status-action-btn.blue {
-  background: #3370eb;
+  background: var(--netcao-blue);
 }
 
 .status-action-btn.green {
@@ -596,7 +596,7 @@
 }
 
 .status-details-grid svg {
-  color: #3370eb;
+  color: var(--netcao-blue);
   margin-bottom: 0.35rem;
 }
 
@@ -661,7 +661,7 @@
 }
 
 .dot.blue {
-  background: #3370eb;
+  background: var(--netcao-blue);
 }
 
 .dot.green {
@@ -696,7 +696,7 @@
   height: 70px;
   border-radius: 1.4rem;
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -721,7 +721,7 @@
 
 .status-empty {
   align-items: center;
-  color: #3370eb;
+  color: var(--netcao-blue);
 }
 
 /* RESPONSIVO */

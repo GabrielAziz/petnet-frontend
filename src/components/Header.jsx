@@ -50,41 +50,33 @@ import {
 } from "../utils/notificacoesLocal";
 
 import notificationService from "../services/notificationService";
+import { useAuth } from "../context/AuthContext";
 
 import "../styles/header.css";
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { user, role, isAuthenticated, logout } = useAuth();
 
   const contaDropdownRef = useRef(null);
 
-  const isAdmin =
-    localStorage.getItem("isAdmin") === "true";
-
-  const isUser =
-    localStorage.getItem("isUser") === "true";
-
-  const isColaborador =
-    localStorage.getItem("isColaborador") === "true";
-
-  const isDev =
-    localStorage.getItem("isDev") === "true";
-
-  const isLogged =
-    isAdmin || isUser || isColaborador || isDev;
+  const isAdmin = role === "admin";
+  const isUser = role === "user";
+  const isColaborador = role === "colaborador";
+  const isLogged = isAuthenticated;
 
   /*
     O header administrativo só aparece dentro das rotas
     administrativas.
 
-    Ao entrar na Home, o título volta a ser PETNET e o menu
+    Ao entrar na Home, o título volta a ser Netcão e o menu
     administrativo não fica misturado com o menu público.
   */
   const isAdminPage =
     location.pathname.startsWith("/admin") ||
     location.pathname.startsWith("/logs") ||
-    ((isAdmin || isDev) &&
+    (isAdmin &&
       location.pathname.startsWith("/minhaconta"));
 
   const isColaboradorPage =
@@ -106,62 +98,7 @@ const Header = () => {
 
   const [notificacoes, setNotificacoes] = useState([]);
 
-  function obterNomeUsuario() {
-    const nomesDiretos = [
-      localStorage.getItem("nomeUsuario"),
-      localStorage.getItem("userName"),
-      localStorage.getItem("username"),
-      localStorage.getItem("nome"),
-    ];
-
-    for (let i = 0; i < nomesDiretos.length; i++) {
-      const nome = nomesDiretos[i];
-
-      if (nome && nome.trim()) {
-        return nome
-          .replace(/^"|"$/g, "")
-          .trim()
-          .split(" ")[0];
-      }
-    }
-
-    const usuariosSalvos = [
-      localStorage.getItem("usuario"),
-      localStorage.getItem("user"),
-      localStorage.getItem("userData"),
-      localStorage.getItem("usuarioLogado"),
-    ];
-
-    for (let i = 0; i < usuariosSalvos.length; i++) {
-      const usuarioSalvo = usuariosSalvos[i];
-
-      if (!usuarioSalvo) {
-        continue;
-      }
-
-      try {
-        const usuario = JSON.parse(usuarioSalvo);
-
-        const nome =
-          usuario?.name ||
-          usuario?.nome ||
-          usuario?.fullName ||
-          usuario?.firstName ||
-          usuario?.user_name ||
-          usuario?.username;
-
-        if (nome && nome.trim()) {
-          return nome.trim().split(" ")[0];
-        }
-      } catch {
-        continue;
-      }
-    }
-
-    return "Conta";
-  }
-
-  const nomeUsuario = obterNomeUsuario();
+  const nomeUsuario = user?.name?.trim().split(" ")[0] || "Conta";
 
   function normalizarNotificacao(n) {
     return {
@@ -315,35 +252,8 @@ const Header = () => {
     );
   };
 
-  const handleLogout = () => {
-    const chavesDeLogin = [
-      "isAdmin",
-      "isUser",
-      "isColaborador",
-      "isDev",
-      "token",
-      "accessToken",
-      "access_token",
-      "authToken",
-      "refreshToken",
-      "refresh_token",
-      "nomeUsuario",
-      "userName",
-      "username",
-      "nome",
-      "usuario",
-      "user",
-      "userData",
-      "usuarioLogado",
-      "userCpf",
-      "cpf",
-      "userRole",
-      "role",
-    ];
-
-    for (let i = 0; i < chavesDeLogin.length; i++) {
-      localStorage.removeItem(chavesDeLogin[i]);
-    }
+  const handleLogout = async () => {
+    await logout();
 
     setMenuOpen(false);
     setContaDropdownOpen(false);
@@ -397,23 +307,13 @@ const Header = () => {
     });
   }
 
-  if (isAdmin || isDev) {
+  if (isAdmin) {
     menuPublico.push({
       id: "gerencia",
       label: "Gerência",
       rota: "/admin",
       icon: AdminIcon,
       hoverIcon: AdminIconHover,
-    });
-  }
-
-  if (isDev) {
-    menuPublico.push({
-      id: "logs-publico",
-      label: "Logs",
-      rota: "/logs",
-      icon: logIcon,
-      hoverIcon: logHoverIcon,
     });
   }
 
@@ -542,7 +442,7 @@ const Header = () => {
             className="icon-link"
             style={{
               color: estaHover
-                ? "var(--petnet-yellow)"
+                ? "var(--netcao-yellow)"
                 : "#ffffff",
             }}
           />
@@ -561,7 +461,7 @@ const Header = () => {
         <span
           style={{
             color: estaHover
-              ? "var(--petnet-yellow)"
+              ? "var(--netcao-yellow)"
               : "#ffffff",
           }}
         >
@@ -725,7 +625,7 @@ const Header = () => {
               ? "ADMINISTRAÇÃO"
               : isColaboradorPage
                 ? "COLABORADOR"
-                : "PETNET"}
+                : "Netcão"}
           </div>
 
           <button

@@ -72,7 +72,7 @@ const Servicos = () => {
           <h2 className="servicos-title">NOSSOS SERVIÇOS</h2>
           <div className="servicos-divider"></div>
           <p className="servicos-subtitle">
-            No PETNET, cada pet é tratado com amor, cuidado e muita dedicação!
+            No Netcão, cada pet é tratado com amor, cuidado e muita dedicação!
             <br />
             Cuidados feitos com amor para deixar seu pet limpo, feliz e ainda mais encantador.
             Descubra nossos serviços e agende o carinho que ele merece!

@@ -189,7 +189,7 @@ const AdminServicos = () => {
               <span className="admin-servicos-tag">Painel administrativo</span>
               <h2>Gerenciar Serviços</h2>
               <p>
-                Cadastre, edite, ative ou desative os serviços exibidos na página pública do PETNET.
+                Cadastre, edite, ative ou desative os serviços exibidos na página pública do Netcão.
               </p>
             </div>
 
@@ -386,7 +386,7 @@ const AdminServicos = () => {
             <button className="modal-close" onClick={() => setModalFotoOpen(false)}>✕</button>
 
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
-              <div style={{ width: 90, height: 90, borderRadius: 18, overflow: "hidden", background: "linear-gradient(135deg, #3370eb 0%, #5f8ef0 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: 90, height: 90, borderRadius: 18, overflow: "hidden", background: "linear-gradient(135deg, #1e3c70 0%, #5f8ef0 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
                   src={servicoFotoSelecionado.servicePicture || iconeMap[servicoFotoSelecionado.name] || banhoIcon}
                   alt="Foto"

@@ -14,7 +14,7 @@ const About = () => {
   return (
     <section id="about" className="section-padding about-section">
       <div className="container">
-        <h1 className="section-title-large">Sobre o PETNET</h1>
+        <h1 className="section-title-large">Sobre o Netcão</h1>
         <div classNare="linha-amarela"></div>
 
         <div className="about-content">
@@ -34,7 +34,7 @@ const About = () => {
             </h2>
 
             <p>
-              O PETNET nasceu da paixão por animais e do desejo de oferecer
+              O Netcão nasceu da paixão por animais e do desejo de oferecer
               serviços de alta qualidade. Há mais de 28 anos, cuidamos dos
               animais de estimação da nossa comunidade com dedicação e carinho.
             </p>

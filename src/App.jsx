@@ -31,9 +31,11 @@ import NovoUsuario from "./pages/NovoUsuario";
 import Logs from "./pages/Logs";
 import LogsMock from "./pages/LogsMock";
 import MeusAgendamentos from "./pages/MeusAgendamentos";
+import { AuthProvider } from "./context/AuthContext";
 
 const App = () => {
   return (
+    <AuthProvider>
     <Router>
       <GlobalStyles />
       <ScrollToTop />
@@ -199,6 +201,7 @@ const App = () => {
       <ScrollToTopButton />
       <Footer />
     </Router>
+    </AuthProvider>
   );
 };
 

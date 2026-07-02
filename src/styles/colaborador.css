@@ -30,7 +30,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background: #f9ee7c;
+  background: var(--netcao-yellow);
   color: #17386f;
   font-size: 0.85rem;
   font-weight: 900;
@@ -87,7 +87,7 @@
 }
 
 .colab-date-box input:focus {
-  border-color: #3370eb;
+  border-color: var(--netcao-blue);
   box-shadow: 0 0 0 4px rgba(51, 112, 235, 0.12);
 }
 
@@ -122,7 +122,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-weight: 900;
 }
 
@@ -146,11 +146,11 @@
 }
 
 .colab-summary-card.total {
-  border-left-color: #f9ee7c;
+  border-left-color: var(--netcao-yellow);
 }
 
 .colab-summary-card.confirmed {
-  border-left-color: #3370eb;
+  border-left-color: var(--netcao-blue);
 }
 
 .colab-summary-card.finished {
@@ -170,7 +170,7 @@
   display: block;
   font-size: 1.9rem;
   font-weight: 900;
-  color: #3370eb;
+  color: var(--netcao-blue);
   line-height: 1;
 }
 
@@ -196,7 +196,7 @@
 }
 
 .colab-column.confirmed {
-  border-top: 6px solid #3370eb;
+  border-top: 6px solid var(--netcao-blue);
 }
 
 .colab-column.finished {
@@ -240,7 +240,7 @@
   height: 2rem;
   min-width: 2rem;
   border-radius: 999px;
-  background: #3370eb;
+  background: var(--netcao-blue);
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -314,7 +314,7 @@
   min-width: 46px;
   border-radius: 1rem;
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,7 +360,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  color: #3370eb;
+  color: var(--netcao-blue);
   background: #edf3ff;
   border: 1px solid #c8dcff;
   border-radius: 999px;
@@ -399,7 +399,7 @@
   min-height: 42px;
   border: none;
   border-radius: 0.85rem;
-  background: #3370eb;
+  background: var(--netcao-blue);
   color: #ffffff;
   font-size: 0.84rem;
   font-weight: 900;
@@ -424,7 +424,7 @@
   border-radius: 1rem;
   padding: 1.4rem;
   text-align: center;
-  color: #3370eb;
+  color: var(--netcao-blue);
 }
 
 .colab-empty strong {
@@ -505,7 +505,7 @@
   border: none;
   border-radius: 999px;
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
   font-size: 1.45rem;
   font-weight: 900;
   cursor: pointer;
@@ -521,7 +521,7 @@
 
 .colab-modal-status.confirmed {
   background: #edf3ff;
-  color: #3370eb;
+  color: var(--netcao-blue);
 }
 
 .colab-modal-status.finished {
@@ -545,7 +545,7 @@
 }
 
 .colab-info-grid svg {
-  color: #3370eb;
+  color: var(--netcao-blue);
   margin-bottom: 0.35rem;
 }
 
@@ -630,7 +630,7 @@
   }
 
   .colab-hero h1 {
-    color: #3370eb;
+    color: var(--netcao-blue);
     font-size: 1.85rem;
   }
 

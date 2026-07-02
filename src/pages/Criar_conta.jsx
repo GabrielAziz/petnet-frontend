@@ -205,11 +205,11 @@ export default function Cadastro() {
     <div className="cadastro-page">
       <div className="cadastro-container">
         <div className="cadastro-hero">
-          <span className="cadastro-badge">Bem-vindo à Petnet</span>
+          <span className="cadastro-badge">Bem-vindo à Netcão</span>
           <h1 className="titulo">Crie sua conta</h1>
           <p className="cadastro-subtitulo">
             Cadastre-se para acompanhar seus pets, manter seus dados organizados
-            e aproveitar a experiência completa da Petnet com mais praticidade e
+            e aproveitar a experiência completa da Netcão com mais praticidade e
             segurança.
           </p>
         </div>

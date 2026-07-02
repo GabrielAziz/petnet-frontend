@@ -297,7 +297,7 @@ const Clientes = () => {
     headRow: {
       style: {
         minHeight: "58px",
-        background: "linear-gradient(90deg, #3370eb 0%, #2457bd 100%)",
+        background: "linear-gradient(90deg, #1e3c70 0%, #2457bd 100%)",
         borderTopLeftRadius: "16px",
         borderTopRightRadius: "16px",
         borderBottom: "none",
@@ -346,11 +346,11 @@ const Clientes = () => {
         margin: "0 4px",
         cursor: "pointer",
         transition: "0.2s ease",
-        color: "#3370eb",
-        fill: "#3370eb",
+        color: "#1e3c70",
+        fill: "#1e3c70",
         backgroundColor: "#f4f8ff",
         "&:hover:not(:disabled)": {
-          backgroundColor: "#F9EE7C",
+          backgroundColor: "#fac060",
         },
         "&:disabled": {
           opacity: 0.4,
@@ -785,7 +785,7 @@ const Clientes = () => {
             <button className="modal-close" onClick={() => setModalFotoOpen(false)}>✕</button>
 
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
-              <div style={{ width: 90, height: 90, borderRadius: 18, overflow: "hidden", background: "linear-gradient(135deg, #3370eb 0%, #5f8ef0 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: 90, height: 90, borderRadius: 18, overflow: "hidden", background: "linear-gradient(135deg, #1e3c70 0%, #5f8ef0 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 {clienteFotoSelecionado.photo
                   ? <img src={clienteFotoSelecionado.photo} alt="Foto" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   : <FiUser size={36} color="#fff" />

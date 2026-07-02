@@ -62,7 +62,7 @@ function ResetPassword() {
       <main className="reset-password-page">
         <section className="reset-password-card">
           <div className="reset-password-icon-box">
-            <img src={focinhoIcon} alt="Icone PETNET" className="reset-password-icon" />
+            <img src={focinhoIcon} alt="Icone Netcão" className="reset-password-icon" />
           </div>
 
           <h1>Redefinir senha</h1>
