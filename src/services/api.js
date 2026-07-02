@@ -1,8 +1,10 @@
 import axios from "axios";
+import { attachAuthInterceptor } from "./authInterceptor";
   const api = axios.create({
     baseURL: "https://api.netcao.com.br/api",
     withCredentials: true
   });
+  attachAuthInterceptor(api);
   export default api;
 
  

@@ -9,6 +9,7 @@ import petService from "../services/petService";
 import { userService } from "../services/userService";
 import LoadingScreen from "../components/LoadingScreen";
 import AdminSidebar from "../components/AdminSidebar";
+import { useAuth } from "../context/AuthContext";
 import { FiSearch, FiCalendar, FiTag, FiPlus, FiEye, FiEdit2 } from "react-icons/fi";
 
 const ExpandedPetInfo = ({ data }) => {
@@ -85,9 +86,9 @@ const formatarData = (data) => {
 
 const Pets_cadastrados = () => {
   const navigate = useNavigate();
-  const isAdmin = localStorage.getItem("isAdmin") === "true";
-  const isDev = localStorage.getItem("isDev") === "true";
-  const podeVerMenuAdmin = isAdmin || isDev;
+  const { user, role } = useAuth();
+  const isAdmin = role === "admin";
+  const podeVerMenuAdmin = isAdmin;
   const [pets, setPets] = useState([]);
   const [users, setUsers] = useState([]);
   const [search, setSearch] = useState("");
@@ -262,7 +263,7 @@ const Pets_cadastrados = () => {
               sex: traduzirSexo(pet.sex),
               observations: pet.observations,
               user_cpf: pet.user_cpf,
-              owner_name: dono?.name || localStorage.getItem("userName") || "Não informado",
+              owner_name: dono?.name || user?.name || "Não informado",
               photo: pet.petPicture || "",
             };
           });

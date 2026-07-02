@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { useNavigate, useLocation } from "react-router-dom";
 import LoadingScreen from "../components/LoadingScreen";
 import { userService } from "../services/userService";
+import { useAuth } from "../context/AuthContext";
 
 import {
   FiLock,
@@ -20,11 +21,12 @@ function Pets() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const isUser = localStorage.getItem("isUser") === "true";
-  const isAdmin = localStorage.getItem("isAdmin") === "true";
+  const { user, role, isLoading: authLoading } = useAuth();
+  const isUser = role === "user";
+  const isAdmin = role === "admin";
   const usuarioLogado = isUser || isAdmin;
 
-  const userCpf = localStorage.getItem("userCpf");
+  const userCpf = user?.cpf;
   const params = new URLSearchParams(location.search);
   const forcarNovoCadastro = params.get("novo") === "true";
 
@@ -282,7 +284,13 @@ function Pets() {
     <>
       <Header />
 
-      {!usuarioLogado ? (
+      {authLoading ? (
+        <div className="pets-page">
+          <div className="pets-container">
+            <LoadingScreen />
+          </div>
+        </div>
+      ) : !usuarioLogado ? (
         <div className="pet-lock-page">
           <div className="pet-lock-card">
             <div className="pet-lock-icon-wrapper">

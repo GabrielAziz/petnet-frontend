@@ -18,15 +18,16 @@ import {
 } from "lucide-react";
 
 import "../styles/adminSidebar.css";
+import { useAuth } from "../context/AuthContext";
 
 const AdminSidebar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { role } = useAuth();
 
   const [menuAberto, setMenuAberto] = useState(false);
 
-  const isDev = localStorage.getItem("isDev") === "true";
-  const isAdmin = localStorage.getItem("isAdmin") === "true";
+  const isAdmin = role === "admin";
 
   const itensMenu = [
     {
@@ -65,7 +66,7 @@ const AdminSidebar = () => {
       rota: "/admin/pets",
       icon: PawPrint,
     },
-    ...(isAdmin || isDev
+    ...(isAdmin
   ? [
       {
         nome: "Logs",

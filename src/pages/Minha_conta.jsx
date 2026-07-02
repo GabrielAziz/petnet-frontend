@@ -38,6 +38,7 @@ import {
 import { userService } from "../services/userService";
 import petService from "../services/petService";
 import scheduleService from "../services/scheduleService";
+import { useAuth } from "../context/AuthContext";
 
 export default function MinhaConta() {
   const [foto, setFoto] = useState(null);
@@ -77,7 +78,9 @@ export default function MinhaConta() {
   const [agendamentos, setAgendamentos] = useState([]);
   const [carregandoAgendamentos, setCarregandoAgendamentos] = useState(false);
 
-  const isAdmin = localStorage.getItem("isAdmin") === "true";
+  const { user: authUser, role, logout } = useAuth();
+  const isAdmin = role === "admin";
+  const userCpf = authUser?.cpf;
 
   useEffect(() => {
     if (modalNotificacoes) {
@@ -365,7 +368,7 @@ export default function MinhaConta() {
   }
 
   useEffect(() => {
-    const cpf = localStorage.getItem("userCpf");
+    const cpf = userCpf;
     if (!cpf) return;
 
     async function carregarDados() {
@@ -464,7 +467,7 @@ export default function MinhaConta() {
 
   // 🔁 Efeito para recarregar agendamentos quando pets mudar
   useEffect(() => {
-    const cpf = localStorage.getItem("userCpf");
+    const cpf = userCpf;
     if (cpf && pets.length > 0) {
       carregarAgendamentos(cpf);
     }
@@ -481,7 +484,7 @@ export default function MinhaConta() {
       setFoto(base64);
 
       try {
-        const cpf = localStorage.getItem("userCpf");
+        const cpf = userCpf;
         await userService.updateUser(cpf, { userPicture: base64 }); // só a foto
       } catch (err) {
         console.error("Erro ao salvar foto:", err);
@@ -492,7 +495,7 @@ export default function MinhaConta() {
   }
   async function removerFoto() {
     try {
-      const cpf = localStorage.getItem("userCpf");
+      const cpf = userCpf;
       await userService.removerFoto(cpf);
       setFoto(null);
     } catch (err) {
@@ -694,7 +697,7 @@ export default function MinhaConta() {
   async function salvarAlteracoes(e) {
     e.preventDefault();
 
-    const cpf = localStorage.getItem("userCpf");
+    const cpf = userCpf;
 
     try {
       if (abaEditar === "pessoal" || abaEditar === "endereco") {
@@ -844,7 +847,7 @@ export default function MinhaConta() {
     }
 
     try {
-      const cpf = localStorage.getItem("userCpf");
+      const cpf = userCpf;
 
       await userService.updateUser(cpf, {
         password: newPassword,
@@ -880,8 +883,8 @@ export default function MinhaConta() {
     ? "Senha forte ✓"
     : "A senha deve conter: mínimo 8 caracteres, letra maiúscula e número";
 
-  function sair() {
-    localStorage.clear();
+  async function sair() {
+    await logout();
     window.location.href = "/conta";
   }
 
